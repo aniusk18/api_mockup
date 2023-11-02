@@ -162,24 +162,24 @@ exports.evaluacionNosis = async(req,res,next) => {
 }
 function validateEvaluacionNosis(body) {
     console.log("Validando Evaluacion");
-    if(
-        ((body.IDCuestionario != undefined && body.IDCuestionario != null) && (body.IDCuestionario !=''))
-        && ((body.IDPregunta1 != undefined && body.IDPregunta1 != null) && (body.IDPregunta1 !=''))
-        && ((body.Respuesta1 != undefined && body.Respuesta1 != null) && (body.Respuesta1 !=''))
-        && ((body.IDPregunta2 != undefined && body.IDPregunta2 != null) && (body.IDPregunta2 !=''))
-        && ((body.Respuesta2 != undefined && body.Respuesta2 != null) && (body.Respuesta2 !=''))
-        && ((body.IDPregunta3 != undefined && body.IDPregunta3 != null) && (body.IDPregunta3 !=''))
-        && ((body.Respuesta3 != undefined && body.Respuesta3 != null) && (body.Respuesta3 !=''))
-        && ((body.IDPregunta4 != undefined && body.IDPregunta4 != null) && (body.IDPregunta4 !=''))
-        && ((body.Respuesta4 != undefined && body.Respuesta4 != null) && (body.Respuesta4 !=''))
-    ){
+    // if(
+    //     ((body.IDCuestionario != undefined && body.IDCuestionario != null) && (body.IDCuestionario !=''))
+    //     && ((body.IDPregunta1 != undefined && body.IDPregunta1 != null) && (body.IDPregunta1 !=''))
+    //     && ((body.Respuesta1 != undefined && body.Respuesta1 != null) && (body.Respuesta1 !=''))
+    //     && ((body.IDPregunta2 != undefined && body.IDPregunta2 != null) && (body.IDPregunta2 !=''))
+    //     && ((body.Respuesta2 != undefined && body.Respuesta2 != null) && (body.Respuesta2 !=''))
+    //     && ((body.IDPregunta3 != undefined && body.IDPregunta3 != null) && (body.IDPregunta3 !=''))
+    //     && ((body.Respuesta3 != undefined && body.Respuesta3 != null) && (body.Respuesta3 !=''))
+    //     && ((body.IDPregunta4 != undefined && body.IDPregunta4 != null) && (body.IDPregunta4 !=''))
+    //     && ((body.Respuesta4 != undefined && body.Respuesta4 != null) && (body.Respuesta4 !=''))
+    // ){
         console.log("Datos requeridos ingresados");
         loggerData(body)
         return true;
-    }else{
-        console.log("Datos requeridos NO ingresados");
-        return false;
-    }
+    //}else{
+    //     console.log("Datos requeridos NO ingresados");
+    //     return false;
+    // }
     
 }
 function loggerData(data) {
