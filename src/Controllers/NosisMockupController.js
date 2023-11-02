@@ -15,14 +15,13 @@ exports.login = async(req,res,next) => {
         const password =body.password;
         var response = "";
         if(((email != undefined && email != null) && (email !='')) && ((password != undefined && password != null) && (password !=''))){
-            console.log('paso por condicion');
+            
             token = {
                 "tokenNs": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwczpcL1wvZGV2LXNlcnZpY2Utbm9zaXMucHJvdmluY2lhbmV0LmNvbS5hclwvXC9sb2dpbiIsImlhdCI6MTY5ODE1NzMzMSwiZXhwIjoxNjk4MTU4MjMxLCJuYmYiOjE2OTgxNTczMzEsImp0aSI6IjRhUjZ4eTU0V0lXSXRmZUgiLCJzdWIiOiJlNmM5ZDUyMC00YjNmLTExZWUtOWIxYS0wMzVjNWRjZDkxZTYiLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.-0bPreGGzagxZeqOUPlGAvruZf2CJ4_vSXJZvVmACvU"
             }
             response = token;
 
         }else{
-            console.log('no paso paso por condicion');
             response = {
                 "message": "Datos requeridos no ingresados",
                 "code": 403
@@ -118,7 +117,6 @@ exports.evaluacionNosis = async(req,res,next) => {
         var validate = validateEvaluacionNosis(body)
         var response = "";
         if(validate){
-            
             response = responseOKevaluacionNosis = {
                 "Contenido": {
                     "Pedido": {

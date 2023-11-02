@@ -18,7 +18,7 @@ router.post('/login',NosisMockupController.login);
 router.post('/validacion-nosis',NosisMockupController.validacionNosis);
 router.post('/evaluacion-nosis',NosisMockupController.evaluacionNosis);
 //Crm banco
-router.post('/login',NosisMockupController.login);
+//router.post('/login',NosisMockupController.login);
 router.post('/get-status-case',CrmBancoMockup.statusCase);
 router.post('/get-case-dni',CrmBancoMockup.getCaseDni);
 
