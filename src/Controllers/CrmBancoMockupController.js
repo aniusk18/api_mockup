@@ -53,7 +53,7 @@ exports.statusCase = async(req,res,next) => {
                 }
             } else {
                 response = {
-                    "message": "Estado No existe",
+                    "message": "Caso No existe",
                     "code": 403
                 }
             }
