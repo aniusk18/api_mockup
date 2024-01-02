@@ -43,11 +43,20 @@ exports.statusCase = async(req,res,next) => {
         var response = "";
         if(((type != undefined && type != null) && (type !='')) && ((caso != undefined && caso != null) && (caso !=''))){
             loggerData(body)
-            response = {
-                "estado": "ASIGNADO"
+            
+            let estado = getEstado(caso)
+            if (estado != "Caso no existe") {
+                let condition = getCondition()
+                response = {
+                    "estado": estado,
+                    "condition":condition
+                }
+            } else {
+                response = {
+                    "message": "Estado No existe",
+                    "code": 403
+                }
             }
-           
- 
         }else{
             response = {
                 "message": "Datos requeridos no ingresados",
@@ -147,5 +156,35 @@ function loggerData(data) {
         console.log('Dato: ' + k + ', valor: ' + data[k]);
         console.log("\n");
      }
+}
+
+function getEstado(caso) {
+    let casos = {
+        'CASO0001' :'ASIGNADO',
+        'CASO0002' :'EN ANALISIS',
+        'CASO0003' :'DEVUELTO',
+        'CASO0004' :'CANCELADO',
+        'CASO0005' :'CERRADO',
+    }
+    if(caso in casos){
+        return casos[caso];
+    }else{
+        return 'Caso no existe'
+    }
+}
+
+function getCondition() {
+    let maximum = 3;
+    let minimum = 0;
+    var randomnumber = Math.floor(Math.random() * (maximum - minimum + 1)) + minimum;
+    console.log('randomnumber')
+    console.log(randomnumber)
+    let odds = {
+        '0' :'Menor a 10 días y tiene mail',
+        '1' :'Menor a 10 días y no tiene mail',
+        '2' :'Mayor a 10 días y tiene mail',
+        '3' :'Mayor a 10 días y no tiene mail'
+    }
+    return odds[randomnumber];
 }
  

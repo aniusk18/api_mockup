@@ -14,8 +14,14 @@ function errorHandler(err, req, res, next) {
     stack: process.env.NODE_ENV === 'production' ? '🥞' : err.stack,
   });
 }
-
+function notFoundToken(req, res, next) {
+  if (!req.headers.authorization) {
+    return res.status(403).json({ error: 'Unauthorized.' });
+  }
+  next();
+}
 module.exports = {
   notFound,
   errorHandler,
+  notFoundToken,
 };
