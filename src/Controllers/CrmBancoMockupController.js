@@ -160,7 +160,7 @@ function loggerData(data) {
 
 function getEstado(caso) {
     let casos = {
-        'CASO0001' :'ASIGNADO',
+        'CASO0001' :'INICIADO',
         'CASO0002' :'ASIGNADO',
         'CASO0003' :'EN ANALISIS',
         'CASO0004' :'DEVUELTO',
