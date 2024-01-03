@@ -161,10 +161,11 @@ function loggerData(data) {
 function getEstado(caso) {
     let casos = {
         'CASO0001' :'ASIGNADO',
-        'CASO0002' :'EN ANALISIS',
-        'CASO0003' :'DEVUELTO',
-        'CASO0004' :'CANCELADO',
-        'CASO0005' :'CERRADO',
+        'CASO0002' :'ASIGNADO',
+        'CASO0003' :'EN ANALISIS',
+        'CASO0004' :'DEVUELTO',
+        'CASO0005' :'CANCELADO',
+        'CASO0006' :'CERRADO',
     }
     if(caso in casos){
         return casos[caso];
