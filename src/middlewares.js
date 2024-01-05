@@ -15,8 +15,8 @@ function errorHandler(err, req, res, next) {
   });
 }
 function notFoundToken(req, res, next) {
-  console.log('req.headers.authorization')
-  console.log(req.headers)
+  console.log('req')
+  console.log(req)
   if (!req.headers.authorization) {
     return res.status(403).json({ error: 'Unauthorized.' });
   }
