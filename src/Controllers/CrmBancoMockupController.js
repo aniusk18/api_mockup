@@ -38,8 +38,8 @@ exports.login = async(req,res,next) => {
 exports.statusCase = async(req,res,next) => {
     try {
         const body =req.body;
-        const type =body.type;
-        const caso =body.caso;
+        const type =body.body_type;
+        const caso =body.body_caso;
         var response = "";
         if(((type != undefined && type != null) && (type !='')) && ((caso != undefined && caso != null) && (caso !=''))){
             loggerData(body)
@@ -47,20 +47,30 @@ exports.statusCase = async(req,res,next) => {
             let estado = getEstado(caso)
             if (estado != "Caso no existe") {
                 let condition = getCondition()
-                response = {
-                    "estado": estado,
-                    "condition":condition
+                response ={
+                    "data": {
+                        "estado": estado,
+                        "condicion":condition
+                    },
+                    "status": "success",
+                    "code": 200
                 }
             } else {
                 response = {
-                    "message": "Caso No existe",
-                    "code": 403
+                    "data": {
+                        "error": "No se encontraron datos"
+                    },
+                    "status": "success",
+                    "code": 200
                 }
             }
         }else{
             response = {
-                "message": "Datos requeridos no ingresados",
-                "code": 403
+                "data": {
+                    "error": "Error en la solicitud"
+                },
+                "status": "success",
+                "code": 200
             }
            
         }
@@ -75,8 +85,8 @@ exports.getCaseDni = async(req,res,next) => {
     try {
  
         const body =req.body;
-        const type =body.type;
-        const caso =body.caso;
+        const type =body.body_type;
+        const caso =body.body_caso;
         console.log ("DNI");
         loggerData(body);
  
@@ -137,8 +147,11 @@ exports.getCaseDni = async(req,res,next) => {
  
         }else{
             response = {
-                "message": "Datos requeridos no ingresados",
-                "code": 403
+                "data": {
+                    "error": "No se encontraron datos"
+                },
+                "status": "success",
+                "code": 200
             }
            
         }
