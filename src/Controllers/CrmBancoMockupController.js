@@ -48,7 +48,7 @@ exports.statusCase = async(req,res,next) => {
             if (estado != "Caso no existe") {
                 let condition = getCondition()
                 response ={
-                    "data": {
+                    "response": {
                         "estado": estado,
                         "condicion":condition
                     },
@@ -57,7 +57,7 @@ exports.statusCase = async(req,res,next) => {
                 }
             } else {
                 response = {
-                    "data": {
+                    "response": {
                         "error": "No se encontraron datos"
                     },
                     "status": "success",
@@ -66,7 +66,7 @@ exports.statusCase = async(req,res,next) => {
             }
         }else{
             response = {
-                "data": {
+                "response": {
                     "error": "Error en la solicitud"
                 },
                 "status": "success",
@@ -100,54 +100,63 @@ exports.getCaseDni = async(req,res,next) => {
                     "message": "No se encontró ningún caso.",
                 }
                }else if(caso === "2"){
- 
                 response = {
-                    "CantOpciones": 3,
-                    "opcion1": {
-                        "NroReclamo": 542312,
-                        "InfoReclamo": "01/11/2023 - Motivo1 - Submotivo1 - 542312"
+                    "response": {
+                        "CantOpciones": 3,
+                        "opcion1": {
+                            "NroReclamo": 542312,
+                            "InfoReclamo": "01/11/2023 - Motivo1 - Submotivo1 - 542312"
+                        },
+                        "opcion2": {
+                            "NroReclamo": 456789,
+                            "InfoReclamo": "02/11/2023 - Motivo2 - Submotivo2 - 456789"
+                        },
+                        "opcion3": {
+                            "NroReclamo": 456789,
+                            "InfoReclamo": "03/11/2023 - Motivo3 - Submotivo3 - 456789"
+                        }
                     },
-                    "opcion2": {
-                        "NroReclamo": 456789,
-                        "InfoReclamo": "02/11/2023 - Motivo2 - Submotivo2 - 456789"
-                    },
-                    "opcion3": {
-                        "NroReclamo": 456789,
-                        "InfoReclamo": "03/11/2023 - Motivo3 - Submotivo3 - 456789"
-                    }
+                    "status": "success",
+                    "code": 200
                 }
  
                }else{
                 response = {
-                    "CantOpciones": 5,
-                    "opcion1": {
-                        "NroReclamo": 12345,
-                        "InfoReclamo": "12/12/2023 - Motivo1 - Submotivo1 - 12345"
+                    "response":
+                        {
+                        "CantOpciones": 5,
+                        "opcion1": {
+                            "NroReclamo": 12345,
+                            "InfoReclamo": "12/12/2023 - Motivo1 - Submotivo1 - 12345"
+                        },
+                        "opcion2": {
+                            "NroReclamo": 67890,
+                            "InfoReclamo": "14/12/2023 - Motivo2 - Submotivo2 - 67890"
+                        },
+                        "opcion3": {
+                            "NroReclamo": 23435,
+                            "InfoReclamo": "16/12/2023 - Motivo3 - Submotivo3 - 23435"
+                        },
+                        "opcion4": {
+                            "NroReclamo": 65432,
+                            "InfoReclamo": "17/12/2023 - Motivo4 - Submotivo4 - 65432"
+                        },
+                        "opcion5": {
+                            "NroReclamo": 12323,
+                            "InfoReclamo": "18/12/2023 - Motivo5 - Submotivo5 - 12323"
+                        },
+                        
                     },
-                    "opcion2": {
-                        "NroReclamo": 67890,
-                        "InfoReclamo": "14/12/2023 - Motivo2 - Submotivo2 - 67890"
-                    },
-                    "opcion3": {
-                        "NroReclamo": 23435,
-                        "InfoReclamo": "16/12/2023 - Motivo3 - Submotivo3 - 23435"
-                    },
-                    "opcion4": {
-                        "NroReclamo": 65432,
-                        "InfoReclamo": "17/12/2023 - Motivo4 - Submotivo4 - 65432"
-                    },
-                    "opcion5": {
-                        "NroReclamo": 12323,
-                        "InfoReclamo": "18/12/2023 - Motivo5 - Submotivo5 - 12323"
-                    },
-                }
+                    "status": "success",
+                    "code": 200
+                    }
                }
            
            
  
         }else{
             response = {
-                "data": {
+                "response": {
                     "error": "No se encontraron datos"
                 },
                 "status": "success",
