@@ -46,57 +46,55 @@ exports.validacionNosis = async(req,res,next) => {
                 "Documento": "27356578908",
                 "FechaNacimiento": "1991-08-30",
                 "CantPreguntas": 4,
-                "IDCuestionario": "107411425-27356578908",
-                "Preguntas": [
-                    {
+                "IDCuestionario": "101403337-20345467875",
+                "Preguntas": {
+                    "Pregunta1": {
                         "IDPregunta": 13,
-                        "IDCuestionario": "107411425-27356578908",
+                        "IDCuestionario": "101403337-20345467875",
                         "textoPregunta1": "cuál de los siguientes domicilios te resulta familiar",
                         "CantOpciones": 5,
                         "Opciones": {
-                            "opcion1Preg1": "guido 3639",
-                            "opcion2Preg1": "guido 3794",
-                            "opcion3Preg1": "guido 3632",
-                            "opcion4Preg1": "guido 3731",
+                            "opcion1Preg1": "castelli 2754",
+                            "opcion2Preg1": "castelli 2839",
+                            "opcion3Preg1": "castelli 2731",
+                            "opcion4Preg1": "castelli 2736",
                             "opcion5Preg1": "ninguno de los anteriores"
                         }
                     },
-                    {
-                        "IDPregunta": 2,
-                        "IDCuestionario": "107411425-27356578908",
-                        "textoPregunta2": "en cuál de estas entidades tenés o tuviste una tarjeta de crédito",
-                        "CantOpciones": 4,
+                    "Pregunta2": {
+                        "IDPregunta": 12,
+                        "IDCuestionario": "101403337-20345467875",
+                        "textoPregunta2": "en cuál de las siguientes empresas trabajas o trabajaste",
+                        "CantOpciones": 5,
                         "Opciones": {
-                            "opcion1Preg2": "Banco del sol",
-                            "opcion2Preg2": "Banco Bilbao Vizcaya Argentaria Sociendad Anónima",
-                            "opcion3Preg2": "Banco patagonia",
-                            "opcion4Preg2": "ninguna de las anteriores"
+                            "opcion1Preg2": "proyecto profesional recursos humanos Sociedad anónima",
+                            "opcion2Preg2": "policia federal argentina",
+                            "opcion3Preg2": "aerolineas argentinas Sociedad anónima",
+                            "opcion4Preg2": "pilkington automotive argentina Sociedad anónima",
+                            "opcion5Preg2": "ninguna de las anteriores"
                         }
                     },
-                    {
-                        "IDPregunta": 36,
-                        "IDCuestionario": "107411425-27356578908",
-                        "textoPregunta3": "trabajas o trabajaste en adt security services Sociendad Anónima",
+                    "Pregunta3": {
+                        "IDPregunta": 32,
+                        "IDCuestionario": "101403337-20345467875",
+                        "textoPregunta3": "estás o estuviste relacionado con morinigo miguel",
                         "CantOpciones": 2,
                         "Opciones": {
                             "opcion1Preg3": "no",
                             "opcion2Preg3": "si"
                         }
                     },
-                    {
-                        "IDPregunta": 24,
-                        "IDCuestionario": "107411425-27356578908",
-                        "textoPregunta4": "en qué localidad vivís o viviste",
-                        "CantOpciones": 5,
+                    "Pregunta4": {
+                        "IDPregunta": 35,
+                        "IDCuestionario": "101403337-20345467875",
+                        "textoPregunta4": "tenés un préstamo en la entidad Banco de corrientes",
+                        "CantOpciones": 2,
                         "Opciones": {
-                            "opcion1Preg4": "barrio arca",
-                            "opcion2Preg4": "jose marti",
-                            "opcion3Preg4": "carapachay",
-                            "opcion4Preg4": "barrio obrero ferroviario",
-                            "opcion5Preg4": "ninguna de las anteriores"
+                            "opcion1Preg4": "no",
+                            "opcion2Preg4": "si"
                         }
                     }
-                ]
+                }
             }
             
 
