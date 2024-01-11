@@ -21,11 +21,11 @@ router.post('/evaluacion-nosis',NosisMockupController.evaluacionNosis);
 //Crm banco
 //router.post('/login',NosisMockupController.login);
 //orden de los parametros (path url,middleware,funcion)
-router.post('/get-status-case',middlewares.notFoundToken,CrmBancoMockup.statusCase);
-router.post('/get-case-dni',middlewares.notFoundToken,CrmBancoMockup.getCaseDni);
+// router.post('/get-status-case',middlewares.notFoundToken,CrmBancoMockup.statusCase);
+// router.post('/get-case-dni',middlewares.notFoundToken,CrmBancoMockup.getCaseDni);
 
-// router.post('/get-status-case',CrmBancoMockup.statusCase);
-// router.post('/get-case-dni',CrmBancoMockup.getCaseDni);
+router.post('/get-status-case',CrmBancoMockup.statusCase);
+router.post('/get-case-dni',CrmBancoMockup.getCaseDni);
 
 
 router.use('/emojis', emojis);
