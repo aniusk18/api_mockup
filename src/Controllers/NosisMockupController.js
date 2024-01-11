@@ -42,6 +42,9 @@ exports.validacionNosis = async(req,res,next) => {
         if(((documento != undefined && documento != null) && (documento !=''))){
             loggerData(body)
             response = {
+                "RazonSocial": "GUARRACINO, SOLANGE PAMELA",
+                "Documento": "27356578908",
+                "FechaNacimiento": "1991-08-30",
                 "CantPreguntas": 4,
                 "IDCuestionario": "101403337-20345467875",
                 "Preguntas": {
