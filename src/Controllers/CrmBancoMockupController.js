@@ -108,15 +108,15 @@ exports.getCaseDni = async(req,res,next) => {
                     "data": {
                         "CantOpciones": 3,
                         "opcion1": {
-                            "NroReclamo": CASO0001,
+                            "NroReclamo": 'CASO0001',
                             "InfoReclamo": "01/11/2023 - Motivo1 - Submotivo1 - 542312"
                         },
                         "opcion2": {
-                            "NroReclamo": CASO0002,
+                            "NroReclamo": 'CASO0002',
                             "InfoReclamo": "02/11/2023 - Motivo2 - Submotivo2 - 456789"
                         },
                         "opcion3": {
-                            "NroReclamo": CASO0003,
+                            "NroReclamo": 'CASO0003',
                             "InfoReclamo": "03/11/2023 - Motivo3 - Submotivo3 - 456789"
                         }
                     },
@@ -129,23 +129,23 @@ exports.getCaseDni = async(req,res,next) => {
                     "data": {
                         "CantOpciones": 5,
                         "opcion1": {
-                            "NroReclamo": CASO0001,
+                            "NroReclamo": 'CASO0001',
                             "InfoReclamo": "12/12/2023 - Motivo1 - Submotivo1 - 12345"
                         },
                         "opcion2": {
-                            "NroReclamo": CASO0002,
+                            "NroReclamo": 'CASO0002',
                             "InfoReclamo": "14/12/2023 - Motivo2 - Submotivo2 - 67890"
                         },
                         "opcion3": {
-                            "NroReclamo": CASO0003,
+                            "NroReclamo": 'CASO0003',
                             "InfoReclamo": "16/12/2023 - Motivo3 - Submotivo3 - 23435"
                         },
                         "opcion4": {
-                            "NroReclamo": CASO0004,
+                            "NroReclamo": 'CASO0004',
                             "InfoReclamo": "17/12/2023 - Motivo4 - Submotivo4 - 65432"
                         },
                         "opcion5": {
-                            "NroReclamo": CASO0005,
+                            "NroReclamo": 'CASO0005',
                             "InfoReclamo": "18/12/2023 - Motivo5 - Submotivo5 - 12323"
                         },
                     },
