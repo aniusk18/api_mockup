@@ -39,11 +39,19 @@ exports.printBodyandHeader = async(req,res,next) => {
         const body =req.body;
         const documento =body.documento;
         console.log(body)
+        var response = "NO TOKEN";
         if (req.headers.authorization) {
+            var tokenrecibido= req.headers.authorization
             console.log('tiene token en header')
+            if(tokenrecibido.includes('Bearer ')){
+                response = "TOKEN RECIBIDO: "+tokenrecibido
+            }else{
+                response = "el tipo de token no es correcto, la estructura debe ser: 'Bearer token'"
+            }
+            
             console.log(req.headers.authorization)
         }
-        var response = "OK - 200";
+        
         
         res.json(response);
     } catch (error) {
