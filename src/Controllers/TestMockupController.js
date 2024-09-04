@@ -38,6 +38,7 @@ exports.printBodyandHeader = async(req,res,next) => {
     try {
         const body =req.body;
         const documento =body.documento;
+        console.log('body')
         console.log(body)
         var response = "NO TOKEN";
         if (req.headers.authorization) {
