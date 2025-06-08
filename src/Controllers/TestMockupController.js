@@ -61,3 +61,28 @@ exports.printBodyandHeader = async(req,res,next) => {
     }
 }
 
+    exports.getProducts = async(req,res,next) => {
+        exports.getProducts = async(req,res,next) => {
+        try {
+            const response = await fetch('https://xhnlisgndidestzscrqz.supabase.co/functions/v1/productos', {
+                method: 'POST',
+                headers: {
+                    'Authorization': `Bearer ${process.env.SUPABASE_TOKEN}`,
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify({
+                    name: "Functions"
+                })
+            });
+
+            const data = await response.json();
+            res.json(data);
+
+        } catch (error) {
+            console.log(error);
+            next()
+        }
+    }
+
+}
+

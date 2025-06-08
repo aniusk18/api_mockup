@@ -28,7 +28,7 @@ router.post('/get-case-dni',middlewares.notFoundToken,CrmBancoMockup.getCaseDni)
 //test s1
 router.post('/login-test',TestMockupController.login);
 router.post('/test-envio-token',middlewares.notFoundToken,TestMockupController.printBodyandHeader);
-
+router.post('/get-product',TestMockupController.getProducts);
 // router.post('/get-status-case',CrmBancoMockup.statusCase);
 // router.post('/get-case-dni',CrmBancoMockup.getCaseDni);
 
