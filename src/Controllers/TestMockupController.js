@@ -34,6 +34,7 @@ exports.login = async(req,res,next) => {
         next()
     }
 }
+
 exports.printBodyandHeader = async(req,res,next) => {
     try {
         const body =req.body;
@@ -61,28 +62,20 @@ exports.printBodyandHeader = async(req,res,next) => {
     }
 }
 
-    exports.getProducts = async(req,res,next) => {
-        exports.getProducts = async(req,res,next) => {
-        try {
-            const response = await fetch('https://xhnlisgndidestzscrqz.supabase.co/functions/v1/productos', {
-                method: 'POST',
-                headers: {
-                    'Authorization': `Bearer ${process.env.SUPABASE_TOKEN}`,
-                    'Content-Type': 'application/json'
-                },
-                body: JSON.stringify({
-                    name: "Functions"
-                })
-            });
+exports.getProducts = async(req,res,next) => {
+    try {
+        const response = await fetch('https://xhnlisgndidestzscrqz.supabase.co/functions/v1/productos', {
+            method: 'GET',
+            headers: {
+                'Authorization': `Bearer ${process.env.SUPABASE_TOKEN}`
+            }
+        });
 
-            const data = await response.json();
-            res.json(data);
+        const data = await response.json();
+        res.json(data);
 
-        } catch (error) {
-            console.log(error);
-            next()
-        }
+    } catch (error) {
+        console.log(error);
+        next()
     }
-
 }
-
