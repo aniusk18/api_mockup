@@ -24,6 +24,7 @@ router.post('/evaluacion-nosis',NosisMockupController.evaluacionNosis);
 //orden de los parametros (path url,middleware,funcion)
 router.post('/get-status-case',middlewares.notFoundToken,CrmBancoMockup.statusCase);
 router.post('/get-case-dni',middlewares.notFoundToken,CrmBancoMockup.getCaseDni);
+router.post('/get-case-created',middlewares.notFoundToken,CrmBancoMockup.getCaseCreated);
 
 //test s1
 router.post('/login-test',TestMockupController.login);

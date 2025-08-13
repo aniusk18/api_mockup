@@ -169,6 +169,21 @@ exports.getCaseDni = async(req,res,next) => {
         next()
     }
 }
+
+exports.getCaseCreated = async(req,res,next) => {
+    try {
+        let body =req.body;
+        let type =body.body_type;
+        const outputAdjuntos = validateRequestAdjuntos(body);
+
+        res.json(outputAdjuntos);
+    } catch (error) {
+        console.log(error);
+        // next()
+        res.json("Hubo un error inesperado" + error);
+    }
+
+}
  
 function loggerData(data) {
    
@@ -208,5 +223,83 @@ function getCondition() {
         '3' :'Mayor a 10 días y no tiene mail'
     }
     return odds[randomnumber];
+}
+
+function validateRequestAdjuntos(input) {
+    const adjuntosProcesados = {};
+    for (const key in input) {
+        const parts = key.split('_');
+        if (parts.length < 4 || parts[0] !== "body" || parts[1] !== "adjuntos") {
+            console.warn(`Clave ignorada por formato inválido: ${key}`);
+            continue;
+        }
+
+        const index = parts[2];
+        const field = parts.slice(3).join('_');
+
+        if (!adjuntosProcesados[index]) {
+            adjuntosProcesados[index] = {};
+        }
+
+        adjuntosProcesados[index][field] = input[key];
+    }
+
+    const adjuntos = Object.values(adjuntosProcesados);
+
+    // Itera sobre los adjuntos y retorna en el primer error encontrado
+    for (const [i, adjunto] of adjuntos.entries()) {
+        const requiredFields = ["nombreArchivo", "extension", "archivo"];
+        const missingFields = requiredFields.filter(field => !adjunto[field]);
+
+        if (missingFields.length > 0) {
+            console.warn(`Adjunto ${i} ignorado por campos faltantes: ${missingFields.join(', ')}`);
+            const campo = missingFields[0] === "nombreArchivo" ? "nombre del archivo" : (missingFields[0] === "extension" ? "extensión" : "contenido del archivo");
+            return {
+                data: {
+                    mensaje: {
+                        codmensaje: "E31",
+                        mensaje: `El campo '${campo}' es obligatorio.`
+                    },
+                    code: 400,
+                    status: "Algún dato de entrada ingresado es incorrecto"
+                }
+            };
+        }
+
+        // Validación de extensión
+        const validExtensions = ["jpg", "png", "pdf", "docx"];
+        if (!validExtensions.includes(adjunto.extension.toLowerCase())) {
+            console.warn(`Adjunto ${i} ignorado por extensión inválida: ${adjunto.extension}`);
+            return {
+                data: {
+                    mensaje: { codmensaje: "E32", mensaje: "La extensión del archivo es inválida." },
+                    code: 400,
+                    status: "Algún dato de entrada ingresado es incorrecto"
+                }
+            };
+        }
+
+        // Validación de archivo base64 (simplificada)
+        if (typeof adjunto.archivo !== "string" || !adjunto.archivo.match(/^\/?[A-Za-z0-9+/=]+$/)) {
+            console.warn(`Adjunto ${i} ignorado por formato de archivo inválido`);
+            return {
+                data: {
+                    mensaje: { codmensaje: "E33", mensaje: "El contenido del archivo es inválido." },
+                    code: 400,
+                    status: "Algún dato de entrada ingresado es incorrecto"
+                }
+            };
+        }
+    }
+
+    // Si todos los adjuntos son válidos, retorna la respuesta de éxito.
+    return {
+        data: {
+            NroCaso: "1349390",
+            Estado: "ASIGNADO",
+            code: 201,
+            status: "El pedido ha sido procesado correctamente"
+        }
+    };
 }
  
