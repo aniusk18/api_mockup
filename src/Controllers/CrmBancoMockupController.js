@@ -262,7 +262,9 @@ function validateRequestAdjuntos(input) {
                     },
                     code: 400,
                     status: "Algún dato de entrada ingresado es incorrecto"
-                }
+                },
+                code: 200,
+                status: "success"
             };
         }
 
@@ -275,7 +277,9 @@ function validateRequestAdjuntos(input) {
                     mensaje: { codmensaje: "E32", mensaje: "La extensión del archivo es inválida." },
                     code: 400,
                     status: "Algún dato de entrada ingresado es incorrecto"
-                }
+                },
+                code: 200,
+                status: "success"
             };
         }
 
@@ -287,7 +291,9 @@ function validateRequestAdjuntos(input) {
                     mensaje: { codmensaje: "E33", mensaje: "El contenido del archivo es inválido." },
                     code: 400,
                     status: "Algún dato de entrada ingresado es incorrecto"
-                }
+                },
+                code: 200,
+                status: "success"
             };
         }
     }
@@ -299,7 +305,9 @@ function validateRequestAdjuntos(input) {
             Estado: "ASIGNADO",
             code: 201,
             status: "El pedido ha sido procesado correctamente"
-        }
+        },
+        code: 200,
+        status: "success"
     };
 }
  
