@@ -5,6 +5,7 @@ const emojis = require('./emojis');
 const router = express.Router();
 const NosisMockupController = require('../Controllers/NosisMockupController');
 const CrmBancoMockup = require('../Controllers/CrmBancoMockupController');
+const RecuperoMoraMockup = require('../Controllers/RecuperoMoraMockupController');
 const TestMockupController = require('../Controllers/TestMockupController');
 const middlewares = require('../middlewares');
 
@@ -25,6 +26,9 @@ router.post('/evaluacion-nosis',NosisMockupController.evaluacionNosis);
 router.post('/get-status-case',middlewares.notFoundToken,CrmBancoMockup.statusCase);
 router.post('/get-case-dni',middlewares.notFoundToken,CrmBancoMockup.getCaseDni);
 router.post('/get-case-created',middlewares.notFoundToken,CrmBancoMockup.getCaseCreated);
+
+// Recupero Mora - Detalle Deuda
+router.get('/get-detalle-mora',middlewares.notFoundToken,RecuperoMoraMockup.getDetalleMora);
 
 //test s1
 router.post('/login-test',TestMockupController.login);
