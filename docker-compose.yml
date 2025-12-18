@@ -4,7 +4,7 @@ version: '3.9'
 services:
   node-app:
     image: node:24
-    container_name: node24-app
+    container_name: api_mockup
     working_dir: /usr/src/app
     volumes:
            - .:/usr/src/app
