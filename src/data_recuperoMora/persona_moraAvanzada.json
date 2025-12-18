@@ -1,0 +1,29 @@
+{
+    "personaId": "12345678",
+    "nombreYApellidos": "Juan Pérez García",
+    "tipoMora": "Avanzada",
+    "productos": {
+        "cantidadProductos": 1,
+        "detalleProductos": [
+            {
+                "nombreProducto": "Préstamo Personal",
+                "diasAtraso": 20,
+                "saldoAbonar": "300.000"
+            }
+        ]
+    },
+    "promesasPago": {
+        "cantidadPromesas": 1,
+        "detallePromesas": [
+            {
+                "fechaCompromiso": "20-12-2025",
+                "montoCompromiso": "150.000"
+            }
+        ]
+    },
+    "TipoAcuerdo": "Refinanciación",
+    "fechaVencimientoAcuerdo": "20-12-2025",
+    "montoAcuerdo": "500.000",
+    "cartera": "Consumo",
+    "judicializable": "No"
+}

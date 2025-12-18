@@ -10,5 +10,5 @@ services:
            - .:/usr/src/app
     ports:
       - "3000:3000"
-    command: bash -c "npm install && npm start"
+    command: bash -c "npm install && npx --yes nodemon -L --exec npm start"
     restart: always

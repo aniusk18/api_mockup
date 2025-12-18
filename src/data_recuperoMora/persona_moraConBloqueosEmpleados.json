@@ -1,0 +1,9 @@
+{
+    "personaId": "12345678",
+    "nombreYApellidos": "Juan Pérez García",
+    "bloqueos": {
+        "tipoBloqueo": "Empleados",
+        "sucursal": "CORONEL PRINGLES",
+        "direccionSucursal": "AV. CORONEL PRINGLES 1234"
+    }
+}

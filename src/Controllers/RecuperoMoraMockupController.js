@@ -44,85 +44,81 @@ exports.getDetalleMora = async(req,res,next) => {
             loggerData(body)
             switch (personaId) {
                 case '12345678':
+                    // mora mixta
                     return res.json({
-                        "personaId": "12345678",
-                        "nombreYApellidos": "Juan Pérez García",
-                        "tipoMora": "Mixta", // Temprana / Avanzada / Mixta
-                        "cartera": "Consumo", // Comercial / Hipotecario /consumo
+                        "data": require('../data_recuperoMora/persona_moraMixta.json'),
+                        "status":"success",
+                        "code":200
                     });
-                    
-                    break;
                 case '87654321':
+                    // mora avanzada
                     return res.json({
-                        "personaId": "12345678",
-                        "nombreYApellidos": "Juan Pérez García",
-                        "tipoMora": "Avanzada", // Temprana / Avanzada / Mixta
-                        "productos": {
-                            "cantidadProductos": 1,
-                            "detalleProductos": [
-                                {
-                                    "nombreProducto": "Préstamo Personal",
-                                    "diasAtraso": 20,
-                                    "saldoAbonar": "300.000"
-                                }
-                            ]
-                        },
-                        "promesasPago": {
-                            "cantidadPromesas": 1,
-                            "detallePromesas": [
-                                {
-                                    "fechaCompromiso": "20-12-2025",
-                                    "montoCompromiso": "150.000"
-                                }
-                            ]
-                        },
-                        "TipoAcuerdo": "Refinanciación", // Refinanciacion / Cancelacion
-                        "fechaVencimientoAcuerdo": "20-12-2025",
-                        "montoAcuerdo": "500.000",
-                        "cartera": "Consumo", // Comercial / Hipotecario /consumo
-                        "judicializable": "No" // Si / No
-
+                        "data": require('../data_recuperoMora/persona_moraAvanzada.json'),
+                        "status":"success",
+                        "code":200
                     });
-                    break;
                 case '11223344':
+                    // mora temprana
                     return res.json({
-                        "personaId": "12345678",
-                        "nombreYApellidos": "Juan Pérez García",
-                        "tipoMora": "Temprana", // Temprana / Avanzada / Mixta
-                        "productos": {
-                            "cantidadProductos": 3,
-                            "detalleProductos": [
-                                {
-                                    "nombreProducto": "Préstamo Personal",
-                                    "diasAtraso": 20,
-                                    "saldoAbonar": "300.000"
-                                }
-                            ]
-                        },
-                        "promesasPago": {
-                            "cantidadPromesas": 1,
-                            "detallePromesas": [
-                                {
-                                    "fechaCompromiso": "2024-07-15",
-                                    "montoCompromiso": "150.000"
-                                }
-                            ]
-                        },
-                        "pedidoRefinanciacion": "SI", // SI / NO
-                        "pedidoRafinanciacionMayor20dias": "SI", // SI / NO / null
-                        "cartera": "Consumo", // Comercial / Hipotecario /consumo
-                        "TCMayor70dias": "NO" // SI / NO
+                        "data": require('../data_recuperoMora/persona_moraTemprana.json'),
+                        "status":"success",
+                        "code":200
                     });
-                    break;
                 case '44332211':
+                    // mora con bloqueos
                     return res.json({
-                        "personaId": "12345678",
-                        "nombreYApellidos": "Juan Pérez García",
-                        "bloqueos": {
-                            "tipoBloqueo": "Fallecido", // fallecido / concursoQuiebra / PagoPendiente / Anterior 1991 / Empleados / Prestamo UVA / SaldadaConSaldo / EsProme
-                            "sucursal": "CORONEL PRINGLES",
-                            "direccionSucursal": "AV. CORONEL PRINGLES 1234",
-                        }
+                        "data": require('../data_recuperoMora/persona_moraConBloqueosFallecido.json'),
+                        "status":"success",
+                        "code":200
+                    });
+                case '44332212':
+                    // mora con bloqueos
+                    return res.json({
+                        "data": require('../data_recuperoMora/persona_moraConBloqueosConcursoQuiebra.json'),
+                        "status":"success",
+                        "code":200
+                    });
+                case '44332213':
+                    // mora con bloqueos
+                    return res.json({
+                        "data": require('../data_recuperoMora/persona_moraConBloqueosAnterior1991.json'),
+                        "status":"success",
+                        "code":200
+                    });
+                case '44332214':
+                    // mora con bloqueos
+                    return res.json({
+                        "data": require('../data_recuperoMora/persona_moraConBloqueosEmpleados.json'),
+                        "status":"success",
+                        "code":200
+                    });
+                case '44332215':
+                    // mora con bloqueos
+                    return res.json({
+                        "data": require('../data_recuperoMora/persona_moraConBloqueosEsProme.json'),
+                        "status":"success",
+                        "code":200
+                    });
+                case '44332216':
+                    // mora con bloqueos
+                    return res.json({
+                        "data": require('../data_recuperoMora/persona_moraConBloqueosPagoPendiente.json'),
+                        "status":"success",
+                        "code":200
+                    });
+                case '44332217':
+                    // mora con bloqueos
+                    return res.json({
+                        "data": require('../data_recuperoMora/persona_moraConBloqueosPrestamoUva.json'),
+                        "status":"success",
+                        "code":200
+                    });
+                case '44332218':
+                    // mora con bloqueos
+                    return res.json({
+                        "data": require('../data_recuperoMora/persona_moraConBloqueosSaldadaConSaldo.json'),
+                        "status":"success",
+                        "code":200
                     });
                 default:
                     break;

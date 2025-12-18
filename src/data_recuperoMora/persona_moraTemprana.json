@@ -1,0 +1,28 @@
+{
+    "personaId": "12345678",
+    "nombreYApellidos": "Juan Pérez García",
+    "tipoMora": "Temprana",
+    "productos": {
+        "cantidadProductos": 3,
+        "detalleProductos": [
+            {
+                "nombreProducto": "Préstamo Personal",
+                "diasAtraso": 20,
+                "saldoAbonar": "300.000"
+            }
+        ]
+    },
+    "promesasPago": {
+        "cantidadPromesas": 1,
+        "detallePromesas": [
+            {
+                "fechaCompromiso": "2024-07-15",
+                "montoCompromiso": "150.000"
+            }
+        ]
+    },
+    "pedidoRefinanciacion": "SI",
+    "pedidoRafinanciacionMayor20dias": "SI",
+    "cartera": "Consumo",
+    "TCMayor70dias": "NO"
+}
