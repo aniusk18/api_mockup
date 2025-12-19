@@ -9,6 +9,16 @@
                 "nombreProducto": "Préstamo Personal",
                 "diasAtraso": 20,
                 "saldoAbonar": "300.000"
+            },
+            {
+                "nombreProducto": "Tarjeta de Crédito Mastercard",
+                "diasAtraso": 30,
+                "saldoAbonar": "176.000"
+            },
+            {
+                "nombreProducto": "Tarjeta de Crédito Visa",
+                "diasAtraso": 15,
+                "saldoAbonar": "125.000"
             }
         ]
     },
