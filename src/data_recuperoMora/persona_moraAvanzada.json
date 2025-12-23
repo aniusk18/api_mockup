@@ -12,15 +12,7 @@
             }
         ]
     },
-    "promesasPago": {
-        "cantidadPromesas": 1,
-        "detallePromesas": [
-            {
-                "fechaCompromiso": "20-12-2025",
-                "montoCompromiso": "150.000"
-            }
-        ]
-    },
+    "Es Prome": "SI",
     "TipoAcuerdo": "Refinanciación",
     "fechaVencimientoAcuerdo": "20-12-2025",
     "montoAcuerdo": "500.000",
