@@ -1,6 +1,10 @@
 {
-    "personaId": "12345678",
+    "tipoDocumento": "DNI",
+    "numeroDocumento": "12345678",
     "nombreYApellidos": "Miguel Ángel Ruiz",
     "tipoMora": "Mixta",
-    "cartera": "Consumo"
+    "cartera": "CONSUMO",
+    "hipotecario": "NO",
+    "TCMayor70dias": "SI"
 }
+ 
