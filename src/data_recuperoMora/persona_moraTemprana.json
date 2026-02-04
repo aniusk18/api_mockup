@@ -1,38 +1,42 @@
 {
-    "personaId": "11223344",
-    "nombreYApellidos": "Sofía Carolina Mendoza",
+    "tipoDocumento": "DNI",
+    "numeroDocumento": "34519493",
+    "nombreYApellidos": "GERARDO JULIAN PACHECO",
     "tipoMora": "Temprana",
     "productos": {
-        "cantidadProductos": 3,
+        "cantidadProductos": 1,
         "detalleProductos": [
             {
-                "nombreProducto": "Préstamo Personal",
-                "diasAtraso": 20,
-                "saldoAbonar": "300.000"
-            },
-            {
-                "nombreProducto": "Tarjeta de Crédito Mastercard",
-                "diasAtraso": 30,
-                "saldoAbonar": "176.000"
-            },
-            {
-                "nombreProducto": "Tarjeta de Crédito Visa",
-                "diasAtraso": 15,
-                "saldoAbonar": "125.000"
+                "idPersona": 3429705,
+                "idContrato": 17671147,
+                "sucursal": "4031",
+                "tipoProducto": "MASTERCARD",
+                "cuentaNumero": "0001711313",
+                "fechaInicioMora": "12/01/2026",
+                "diasAtraso": 11,
+                "moneda": "ARS  ",
+                "deudaVencida": 129220,
+                "deudaTotal": 134220,
+                "ng": "NO",
+                "ctaSaldadaConSaldo": "NO",
+                "tieneAjusteDeCapital": "NO",
+                "esProme": "NO",
+                "valido": "SI",
+                "nombreSucursal": "AVENIDA DEL TRABAJO(SUCURSAL)",
+                "localidadSucursal": "FLORES",
+                "domicilioSucursal": "Av. Varela 1122/34",
+                "grupoNivelProducto": "TAR",
+                "svma": "NO"
             }
         ]
     },
     "promesasPago": {
-        "cantidadPromesas": 1,
-        "detallePromesas": [
-            {
-                "fechaCompromiso": "08-03-2026",
-                "montoCompromiso": "150.000"
-            }
-        ]
+        "cantidadPromesas": 0,
+        "detallePromesas": []
     },
-    "pedidoRefinanciacion": "SI",
-    "pedidoRafinanciacionMayor20dias": "SI",
-    "cartera": "Consumo",
+    "pedidoRefinanciacion": "NO",
+    "pedidoRefinanciacionMayor20dias": "NO",
+    "cartera": "CONSUMO",
+    "hipotecario": "NO",
     "TCMayor70dias": "NO"
 }
