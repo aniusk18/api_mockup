@@ -1,9 +1,11 @@
 {
-    "personaId": "44332211",
-    "nombreYApellidos": "Carlos Eduardo Díaz",
+    "tipoDocumento": "DNI",
+    "numeroDocumento": "25313353",
+    "nombreYApellidos": "ROQUE ALEJANDRO ACOSTA",
     "bloqueos": {
-        "tipoBloqueo": "Fallecido",
-        "sucursal": "CORONEL PRINGLES",
-        "direccionSucursal": "AV. CORONEL PRINGLES 1234"
+        "tipoBloqueo": "fallecido",
+        "sucursal": "LOBOS(SUCURSAL)",
+        "localidadSucursal": "LOBOS",
+        "direccionSucursal": "9 de Julio y Rivadavia"
     }
 }

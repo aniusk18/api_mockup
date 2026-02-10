@@ -1,9 +1,11 @@
 {
-    "personaId": "44332214",
-    "nombreYApellidos": "Ana María Torres",
+    "tipoDocumento": "DNI",
+    "numeroDocumento": "25313356",
+    "nombreYApellidos": "ROQUE ALEJANDRO ACOSTA",
     "bloqueos": {
         "tipoBloqueo": "Empleados",
-        "sucursal": "CORONEL PRINGLES",
-        "direccionSucursal": "AV. CORONEL PRINGLES 1234"
+        "sucursal": "LOBOS(SUCURSAL)",
+        "localidadSucursal": "LOBOS",
+        "direccionSucursal": "9 de Julio y Rivadavia"
     }
 }

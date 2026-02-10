@@ -1,9 +1,11 @@
 {
-    "personaId": "44332217",
-    "nombreYApellidos": "Pedro Pablo Herrera",
+    "tipoDocumento": "DNI",
+    "numeroDocumento": "25313358",
+    "nombreYApellidos": "ROQUE ALEJANDRO ACOSTA",
     "bloqueos": {
-        "tipoBloqueo": "ConcursoQuiebra",
-        "sucursal": "CORONEL PRINGLES",
-        "direccionSucursal": "AV. CORONEL PRINGLES 1234"
+        "tipoBloqueo": "PrestamoUVA",
+        "sucursal": "LOBOS(SUCURSAL)",
+        "localidadSucursal": "LOBOS",
+        "direccionSucursal": "9 de Julio y Rivadavia"
     }
 }

@@ -1,9 +1,11 @@
 {
-    "personaId": "44332216",
-    "nombreYApellidos": "Rosa Elena Vargas",
+    "tipoDocumento": "DNI",
+    "numeroDocumento": "25313357",
+    "nombreYApellidos": "ROQUE ALEJANDRO ACOSTA",
     "bloqueos": {
         "tipoBloqueo": "PagoPendiente",
-        "sucursal": "CORONEL PRINGLES",
-        "direccionSucursal": "AV. CORONEL PRINGLES 1234"
+        "sucursal": "LOBOS(SUCURSAL)",
+        "localidadSucursal": "LOBOS",
+        "direccionSucursal": "9 de Julio y Rivadavia"
     }
 }

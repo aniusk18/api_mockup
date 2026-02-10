@@ -1,9 +1,11 @@
 {
-    "personaId": "44332218",
-    "nombreYApellidos": "Laura Beatriz Castro",
+    "tipoDocumento": "DNI",
+    "numeroDocumento": "25313359",
+    "nombreYApellidos": "ROQUE ALEJANDRO ACOSTA",
     "bloqueos": {
         "tipoBloqueo": "SaldadaConSaldo",
-        "sucursal": "CORONEL PRINGLES",
-        "direccionSucursal": "AV. CORONEL PRINGLES 1234"
+        "sucursal": "LOBOS(SUCURSAL)",
+        "localidadSucursal": "LOBOS",
+        "direccionSucursal": "9 de Julio y Rivadavia"
     }
 }
