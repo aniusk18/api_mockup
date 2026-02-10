@@ -1,21 +1,45 @@
-{
-    "personaId": "87654321",
-    "nombreYApellidos": "Juan Antonio Pérez",
+ {
+    "tipoDocumento": "DNI",
+    "numeroDocumento": "4043769",
+    "nombreYApellidos": "JUAN CARLOS AONSIO",
     "tipoMora": "Avanzada",
     "productos": {
-        "cantidadProductos": 1,
-        "detalleProductos": [
-            {
-                "nombreProducto": "Préstamo Personal",
-                "diasAtraso": 20,
-                "saldoAbonar": "300.000"
-            }
-        ]
+    "cantidadProductos": 1,
+    "detalleProductos": [
+        {
+        "idPersona": 446,
+        "idContrato": 21362,
+        "sucursal": "5027",
+        "tipoProducto": "VISA",
+        "cuentaNumero": "0076305797          ",
+        "fechaInicioMora": "21/02/2013",
+        "diasAtraso": 4719,
+        "moneda": "ARS  ",
+        "deudaVencida": 3559.57,
+        "deudaTotal": 3559.57,
+        "ng": "SI",
+        "ctaSaldadaConSaldo": "NO",
+        "tieneAjusteDeCapital": "NO",
+        "esProme": "NO",
+        "valido": "SI",
+        "nombreSucursal": "VILLA MARTELLI(SUCURSAL)",
+        "localidadSucursal": "VILLA MARTELLI",
+        "domicilioSucursal": "Av. Mitre 421",
+        "grupoNivelProducto": "TAR",
+        "svma": "NO"
+        }
+    ]
     },
-    "Es Prome": "SI",
-    "TipoAcuerdo": "Refinanciación",
-    "fechaVencimientoAcuerdo": "20-12-2025",
-    "montoAcuerdo": "500.000",
-    "cartera": "Consumo",
-    "judicializable": "No"
+    "promesasPago": {
+        "cantidadPromesas": 0,
+        "detallePromesas": []
+        },
+    "acuerdos": {
+        "cantidadAcuerdos": 0,
+        "detalleAcuerdos": []
+        },
+    "cartera": "CONSUMO",
+    "judicializable": "NO",
+    "hipotecario": "NO",
+    "TCMayor70dias": "SI"
 }
