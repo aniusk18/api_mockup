@@ -1,9 +1,12 @@
+
 {
-    "personaId": "44332215",
-    "nombreYApellidos": "José Luis Ramírez",
+    "tipoDocumento": "DNI",
+    "numeroDocumento": "25313352",
+    "nombreYApellidos": "ROQUE ALEJANDRO ACOSTA",
     "bloqueos": {
         "tipoBloqueo": "EsProme",
-        "sucursal": "CORONEL PRINGLES",
-        "direccionSucursal": "AV. CORONEL PRINGLES 1234"
+        "sucursal": "LOBOS(SUCURSAL)",
+        "localidadSucursal": "LOBOS",
+        "direccionSucursal": "9 de Julio y Rivadavia"
     }
 }
