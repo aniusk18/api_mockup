@@ -35,7 +35,7 @@ exports.login = async(req,res,next) => {
         next()
     }
 }
-exports.getDetalleMora = async(req,res,next) => {
+exports.postDetalleMora = async(req,res,next) => {
     try {
         const body =req.body;
         const personaId =body.personaId;
