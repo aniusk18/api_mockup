@@ -28,7 +28,7 @@ router.post('/get-case-dni',middlewares.notFoundToken,CrmBancoMockup.getCaseDni)
 router.post('/get-case-created',middlewares.notFoundToken,CrmBancoMockup.getCaseCreated);
 
 // Recupero Mora - Detalle Deuda
-router.get('/get-detalle-mora',RecuperoMoraMockup.getDetalleMora);
+router.post('/get-detalle-mora',RecuperoMoraMockup.getDetalleMora);
 
 //test s1
 router.post('/login-test',TestMockupController.login);
