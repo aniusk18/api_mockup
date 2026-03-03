@@ -31,13 +31,32 @@
     ]
     },
     "promesasPago": {
-        "cantidadPromesas": 0,
-        "detallePromesas": []
-        },
+        "cantidadPromesas": 1,
+        "detallePromesas": [
+            { 
+                "idPersona": 87654321, 
+                "estado": "Pendiente", 
+                "fechaPrometida": "29/03/2026", 
+                "moneda": "ARS", 
+                "monto": 2600000.000000 
+            }
+        ]
+    },
     "acuerdos": {
-        "cantidadAcuerdos": 0,
-        "detalleAcuerdos": []
-        },
+        "cantidadAcuerdos": 1,
+        "detalleAcuerdos": [
+            { 
+                "idPersona": 87654321, 
+                "estado": "Propuesta Ref Registrada", 
+                "tipoArreglo": "REFINANCIACION", 
+                "vencimiento": "13/11/2026", 
+                "frecuenciaPago": "MENSUAL", 
+                "cuotas": 36, 
+                "anticipo": 238000.00, 
+                "moneda": "ARS" 
+            }
+        ]
+    },
     "cartera": "CONSUMO",
     "judicializable": "NO",
     "hipotecario": "NO",

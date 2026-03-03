@@ -1,0 +1,64 @@
+{
+    "tipoDocumento": "DNI",
+    "numeroDocumento": "42022026",
+    "nombreYApellidos": "VALENTINA DANISA MACHADO",
+    "tipoMora": "Temprana",
+    "productos": {
+        "cantidadProductos": 2,
+        "detalleProductos": [
+            {
+                "idPersona": 3386092,
+                "idContrato": 18821429,
+                "sucursal": "5068",
+                "tipoProducto": "PRESTAMOS PERSOPLANTA PERMANEN",
+                "cuentaNumero": "00050124320",
+                "fechaInicioMora": "31/12/2025",
+                "diasAtraso": 23,
+                "moneda": "ARS  ",
+                "deudaVencida": 235755.39,
+                "deudaTotal": 3729573.42,
+                "ng": "NO",
+                "ctaSaldadaConSaldo": "NO",
+                "tieneAjusteDeCapital": "NO",
+                "esProme": "NO",
+                "valido": "SI",
+                "nombreSucursal": "LOMAS DE ZAMORA(SUCURSAL)",
+                "localidadSucursal": "LOMAS DE ZAMORA",
+                "domicilioSucursal": "F. Laprida 200 Esquina España",
+                "grupoNivelProducto": "PNH",
+                "svma": "NO"
+            },
+            {
+                "idPersona": 3386092,
+                "idContrato": 18759410,
+                "sucursal": "5068",
+                "tipoProducto": "VISA",
+                "cuentaNumero": "1196821994",
+                "fechaInicioMora": "05/01/2026",
+                "diasAtraso": 18,
+                "moneda": "ARS  ",
+                "deudaVencida": 131145,
+                "deudaTotal": 1172741.68,
+                "ng": "NO",
+                "ctaSaldadaConSaldo": "NO",
+                "tieneAjusteDeCapital": "NO",
+                "esProme": "NO",
+                "valido": "SI",
+                "nombreSucursal": "LOMAS DE ZAMORA(SUCURSAL)",
+                "localidadSucursal": "LOMAS DE ZAMORA",
+                "domicilioSucursal": "F. Laprida 200 Esquina España",
+                "grupoNivelProducto": "TAR",
+                "svma": "NO"
+            }
+        ]
+    },
+    "promesasPago": {
+        "cantidadPromesas": 0,
+        "detallePromesas": []
+    },
+    "pedidoRefinanciacion": "NO",
+    "pedidoRefinanciacionMayor20dias": "NO",
+    "cartera": "CONSUMO",
+    "hipotecario": "NO",
+    "TCMayor70dias": "NO"
+}

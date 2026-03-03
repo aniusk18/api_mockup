@@ -64,6 +64,20 @@ exports.postDetalleMora = async(req,res,next) => {
                         "status":"success",
                         "code":200
                     });
+                case '44332245':
+                    // mora temprana 2 productos
+                    return res.json({
+                        "data": require('../data_recuperoMora/persona_moraTemprana2Productos.json'),
+                        "status":"success",
+                        "code":200
+                    });
+                case '44332246':
+                    // persona sin mora
+                    return res.json({
+                        "data": require('../data_recuperoMora/persona_sinMora.json'),
+                        "status":"success",
+                        "code":200
+                    });
                 case '44332211':
                     // mora con bloqueos
                     return res.json({
