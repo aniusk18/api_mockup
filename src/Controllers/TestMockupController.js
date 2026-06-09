@@ -62,6 +62,19 @@ exports.printBodyandHeader = async(req,res,next) => {
     }
 }
 
+exports.printBodySocialnet = async(req,res,next) => {
+    try {
+        const body =req.body;
+        const documento =body.documento;
+        console.log('body')
+        console.log(body)
+        var response = "200 OK";
+        res.json(response);
+    } catch (error) {
+        console.log(error);
+        next()
+    }
+}
 exports.getProducts = async(req,res,next) => {
     try {
         const response = await fetch('https://xhnlisgndidestzscrqz.supabase.co/functions/v1/productos', {

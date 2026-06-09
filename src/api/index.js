@@ -33,6 +33,7 @@ router.get('/get-detalle-mora',RecuperoMoraMockup.getDetalleMora);
 //test s1
 router.post('/login-test',TestMockupController.login);
 router.post('/test-envio-token',middlewares.notFoundToken,TestMockupController.printBodyandHeader);
+router.post('/test-envio-token-socialnet',TestMockupController.printBodySocialnet);
 router.get('/get-product',TestMockupController.getProducts);
 // router.post('/get-status-case',CrmBancoMockup.statusCase);
 // router.post('/get-case-dni',CrmBancoMockup.getCaseDni);
