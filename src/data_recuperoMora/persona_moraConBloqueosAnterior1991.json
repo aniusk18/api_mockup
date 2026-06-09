@@ -1,9 +1,11 @@
 {
-    "personaId": "44332213",
-    "nombreYApellidos": "María José Fernández",
+    "tipoDocumento": "DNI",
+    "numeroDocumento": "25313354",
+    "nombreYApellidos": "ROQUE ALEJANDRO ACOSTA",
     "bloqueos": {
         "tipoBloqueo": "Anterior1991",
-        "sucursal": "CORONEL PRINGLES",
-        "direccionSucursal": "AV. CORONEL PRINGLES 1234"
+        "sucursal": "LOBOS(SUCURSAL)",
+        "localidadSucursal": "LOBOS",
+        "direccionSucursal": "9 de Julio y Rivadavia"
     }
 }

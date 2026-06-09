@@ -1,9 +1,11 @@
 {
-    "personaId": "44332212",
-    "nombreYApellidos": "Luis Alberto Gómez",
+    "tipoDocumento": "DNI",
+    "numeroDocumento": "25313355",
+    "nombreYApellidos": "ROQUE ALEJANDRO ACOSTA",
     "bloqueos": {
-        "tipoBloqueo": "ConcursoQuiebra",
-        "sucursal": "CORONEL PRINGLES",
-        "direccionSucursal": "AV. CORONEL PRINGLES 1234"
+        "tipoBloqueo": "concursoQuiebra",
+        "sucursal": "LOBOS(SUCURSAL)",
+        "localidadSucursal": "LOBOS",
+        "direccionSucursal": "9 de Julio y Rivadavia"
     }
 }

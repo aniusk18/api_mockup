@@ -35,7 +35,7 @@ exports.login = async(req,res,next) => {
         next()
     }
 }
-exports.getDetalleMora = async(req,res,next) => {
+exports.postDetalleMora = async(req,res,next) => {
     try {
         const body =req.body;
         const personaId =body.personaId;
@@ -61,6 +61,20 @@ exports.getDetalleMora = async(req,res,next) => {
                     // mora temprana
                     return res.json({
                         "data": require('../data_recuperoMora/persona_moraTemprana.json'),
+                        "status":"success",
+                        "code":200
+                    });
+                case '44332245':
+                    // mora temprana 2 productos
+                    return res.json({
+                        "data": require('../data_recuperoMora/persona_moraTemprana2productos.json'),
+                        "status":"success",
+                        "code":200
+                    });
+                case '44332246':
+                    // persona sin mora
+                    return res.json({
+                        "data": require('../data_recuperoMora/persona_sinMora.json'),
                         "status":"success",
                         "code":200
                     });
